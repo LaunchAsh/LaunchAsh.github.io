@@ -1,8 +1,10 @@
+import React from "react";
+import HomePage from "./views/HomePage";
 function App() {
   return (
-    <div className="App">
-      <h1> HELLO WORLD </h1>
-    </div>
+    <React.Suspense fallback={<div>Loading...</div>}>
+      <HomePage/>
+    </React.Suspense>
   );
 }
 
